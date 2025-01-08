@@ -1,6 +1,4 @@
 #include <unistd.h>
-#include <string.h>
-#include <stdint.h>
 
 extern void *lw_malloc(size_t size);
 extern void lw_free(void *ptr);
