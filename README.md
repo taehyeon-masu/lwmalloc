@@ -1,20 +1,17 @@
 # LWMalloc: A Lightweight Dynamic Memory Allocator for Resource-Constrained Environments
 LWMalloc is a dynamic memory allocator for resource-constrained systems. It can be injected at runtime to replace malloc/calloc/realloc/free via LD_PRELOAD.
 
-======================================================================
-FILES
+## FILES
 ----------------------------------------------------------------------
 - lwmalloc.c : allocator implementation
 - Makefile   : build script (produces a shared object)
 
-======================================================================
-BUILD
+## BUILD
 ----------------------------------------------------------------------
 make
 # Output: ./lwmalloc.so
 
-======================================================================
-USE AT RUNTIME (LD_PRELOAD)
+## USE AT RUNTIME (LD_PRELOAD)
 ----------------------------------------------------------------------
 Per-process:
 LD_PRELOAD=/absolute/or/relative/path/to/lwmalloc.so your_program [args]
@@ -26,8 +23,7 @@ unset LD_PRELOAD
 
 Tip: Prefer an absolute path for LD_PRELOAD.
 
-======================================================================
-QUICK TEST
+## QUICK TEST
 ----------------------------------------------------------------------
 A simple test program (test.c) is included in this repository.
 
