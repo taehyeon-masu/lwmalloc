@@ -9,7 +9,7 @@ LWMalloc is a dynamic memory allocator for resource-constrained systems. It can 
 ## BUILD
 ----------------------------------------------------------------------
 make
-# Output: ./lwmalloc.so
+Output: ./lwmalloc.so
 
 ## USE AT RUNTIME (LD_PRELOAD)
 ----------------------------------------------------------------------
