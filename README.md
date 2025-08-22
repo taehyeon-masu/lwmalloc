@@ -8,8 +8,10 @@ LWMalloc is a dynamic memory allocator for resource-constrained systems. It can 
 
 ## BUILD
 ----------------------------------------------------------------------
+```bash
 make
-Output: ./lwmalloc.so
+# Output: lwmalloc.so
+```
 
 ## USE AT RUNTIME (LD_PRELOAD)
 ----------------------------------------------------------------------
@@ -28,10 +30,14 @@ Tip: Prefer an absolute path for LD_PRELOAD.
 A simple test program (test.c) is included in this repository.
 
 1) Build the test:
+```bash
 gcc -O2 -o test test.c
+```
 
-2) Run the test with LWMalloc preloaded:
+3) Run the test with LWMalloc preloaded:
+```bash
 LD_PRELOAD=./lwmalloc.so ./test
+```
 
 ## NOTES & LIMITATIONS
 ----------------------------------------------------------------------
