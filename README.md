@@ -33,8 +33,7 @@ gcc -O2 -o test test.c
 2) Run the test with LWMalloc preloaded:
 LD_PRELOAD=./lwmalloc.so ./test
 
-======================================================================
-NOTES & LIMITATIONS
+## NOTES & LIMITATIONS
 ----------------------------------------------------------------------
 - Static binaries and some setuid programs may ignore LD_PRELOAD due to loader/security policies.
 - Do not preload multiple user-space allocators at the same time.
